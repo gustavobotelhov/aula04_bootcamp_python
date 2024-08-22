@@ -27,12 +27,30 @@
 
 # 4. Escreva um programa que conta o número de ocorrências de cada caractere em uma string usando um dicionário.
 
-def contar_caracteres(s):
-    contagem = {}
-    for caractere in s:    #  por se tratar de uma string o python ja entende que tem que passar por cada string.
-        contagem[caractere] = contagem.get(caractere, 0) + 1   #contagem.get(caractere, 0) retorna a contagem do caracter no dicionario contagem, caso ja exista e incrementa 1.
-    return contagem
+# def contar_caracteres(s):
+#     contagem = {}
+#     for caractere in s:    #  por se tratar de uma string o python ja entende que tem que passar por cada string.
+#         contagem[caractere] = contagem.get(caractere, 0) + 1   #contagem.get(caractere, 0) retorna a contagem do caracter no dicionario contagem, caso ja exista e incrementa 1.
+#     return contagem
 
-print(contar_caracteres("engenharia de dados"))
+# print(contar_caracteres("engenharia de dados"))
 
 # 5. Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}, calcule o preço total da lista de compras.
+
+lista_produtos: list = ["maçã", "banana", "cereja"]
+
+dicionário: dict = {
+    "maçã": 0.45, 
+    "banana": 0.30, 
+    "cereja": 0.65
+}
+preco_total = 0
+for elemento in lista_produtos:
+    # print(dicionário[elemento])
+    preco_total += dicionário[elemento]
+    print(preco_total)
+   
+# lista_compras = ["maçã", "banana", "cereja"]
+# precos = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+# total = sum(precos[item] for item in lista_compras)
+# print(f"Preço total: {total}")
