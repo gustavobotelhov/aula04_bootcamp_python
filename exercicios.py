@@ -37,18 +37,20 @@
 
 # 5. Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}, calcule o preço total da lista de compras.
 
-lista_produtos: list = ["maçã", "banana", "cereja"]
+# lista_produtos: list = ["maçã", "banana", "cereja"]
 
-dicionário: dict = {
-    "maçã": 0.45, 
-    "banana": 0.30, 
-    "cereja": 0.65
-}
-preco_total = 0
-for elemento in lista_produtos:
-    # print(dicionário[elemento])
-    preco_total += dicionário[elemento]
-    print(preco_total)
+# dicionário: dict = {
+#     "maçã": 0.45, 
+#     "banana": 0.30, 
+#     "cereja": 0.65
+# }
+# preco_total = 0
+# for elemento in lista_produtos:
+#     # print(dicionário[elemento])
+#     preco_total += dicionário[elemento]
+#     print(preco_total)
+# Essa forma acima foi que eu tentei fazer e até é o caminho certo, mas vai printar a cada vez que iterar nos elementos da lista.
+# A maneira abaixo consolida tudo com o SUM e usa o for de uma forma diferente
    
 # lista_compras = ["maçã", "banana", "cereja"]
 # precos = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
